@@ -1,6 +1,6 @@
 import React, { useState, useRef, MouseEvent } from 'react';
 import { GoogleGenAI } from "@google/genai";
-import { PRODUCTS, BACKGROUND_IMAGE, WHATSAPP_NUMBER, ORACLE_WHATSAPP_NUMBER } from './constants';
+import { PRODUCTS, BACKGROUND_IMAGE, WHATSAPP_NUMBER } from './constants';
 import { Sparkles, ShoppingBag, Wand2, Send, MessageCircle, Loader2, ArrowRight } from 'lucide-react';
 import { Product } from './types';
 
@@ -23,7 +23,7 @@ const App = () => {
   const handleOracleConsultation = () => {
     if (!oracleResponse) return;
     const message = `Greetings Wizard. I consulted the Oracle with the theme: "${oraclePrompt}" and received this prophecy:\n\n${oracleResponse}\n\nI wish to bring this to life.`;
-    const url = `https://wa.me/${ORACLE_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 

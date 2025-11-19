@@ -29,5 +29,4 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const WHATSAPP_NUMBER = "96181030754"; 
-export const ORACLE_WHATSAPP_NUMBER = "96181030754";
 export const BACKGROUND_IMAGE = "https://images.unsplash.com/photo-1505664063603-28e48ca204eb?q=80&w=2070&auto=format&fit=crop";
